@@ -1,7 +1,7 @@
 {
-  "extName": {"message": "NoHaram"},
-  "extDescription": {"message": "Blurs images that contain women and/or men, in real time, entirely on your device."},
-  "brandSubtitle": {"message": "Lower your gaze online."},
+  "extName": {"message": "NoHaram - Block Haram and NSFW images"},
+  "extDescription": {"message": "Blurs images of women and/or men and blocks NSFW images, in real time, entirely on your device."},
+  "brandSubtitle": {"message": "Block Haram and NSFW images"},
   "settings": {"message": "Settings"},
   "close": {"message": "Close"},
   "tabDetecting": {"message": "Detecting tab…"},

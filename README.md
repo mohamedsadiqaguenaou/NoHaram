@@ -1,23 +1,24 @@
 <p align="center">
+  <b>English</b> · <a href="README.ar.md">العربية</a>
+</p>
+
+<p align="center">
   <img src="src/icons/logo.png" width="96" alt="NoHaram logo">
 </p>
 
 <h1 align="center">NoHaram</h1>
 
 <p align="center">
-  <b>Lower your gaze online.</b><br>
-  A browser extension that blurs pictures of women, men, or both, as pages load. Everything runs on your own device.
+  <b>Block Haram and NSFW images</b><br>
+  A browser extension that blurs pictures of women, men or both, and blocks nudity and other NSFW images, as pages load. Everything runs on your own device.
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-34c778" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Brave-supported-34c778" alt="Chrome, Edge and Brave supported">
   <img src="https://img.shields.io/badge/Firefox-supported-34c778" alt="Firefox supported">
+  <img src="https://img.shields.io/badge/blocks-NSFW-c0392b" alt="Blocks NSFW images">
   <img src="https://img.shields.io/badge/runs-100%25%20on--device-111111" alt="Runs 100% on-device">
-</p>
-
-<p align="center" dir="rtl">
-  NoHaram إضافة للمتصفح تحجب صور النساء أو الرجال أو كليهما (حسب اختيارك) فور ظهورها، وتعمل بالكامل على جهازك: لا تُرسَل أي صورة أو رابط إلى أي خادم.
 </p>
 
 <p align="center">
@@ -31,7 +32,7 @@
 ## Features
 
 - **Choose who to blur:** women, men or both, on every website.
-- **Blurs nudity too:** explicit images are blurred whoever is in them. This is on by default.
+- **Blocks NSFW images:** nudity and other explicit images are blurred, whoever is in them. This is on by default.
 - **Private by design:** the AI models run inside your browser. No image, URL or browsing history is ever sent anywhere. There are no accounts, analytics or ads.
 - **Nothing flashes:** images stay blurred while they load and are checked, then only the matching ones stay blurred.
 - **Finds images however a site shows them:**
@@ -51,7 +52,7 @@
 You need [Node.js](https://nodejs.org) 22 or newer.
 
 ```bash
-git clone <this repository>
+git clone https://github.com/mohamedsadiqaguenaou/NoHaram.git
 cd NoHaram
 npm install
 npm run build
@@ -65,7 +66,7 @@ Then load the built folder. Use `dist/`, not `src/`:
 | Firefox (desktop) | Open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on** and choose `dist/firefox/manifest.json` |
 | Firefox for Android | `npx web-ext run -t firefox-android -s dist/firefox` with a USB-connected phone ([guide](https://extensionworkshop.com/documentation/develop/developing-extensions-for-firefox-for-android/)) |
 
-- **Ready-made zips:** prebuilt packages are attached to each [release](../../releases). `npm run zip` builds them yourself, into `dist/noharam-<browser>-<version>.zip`.
+- **Ready-made zips:** prebuilt packages are attached to each [release](https://github.com/mohamedsadiqaguenaou/NoHaram/releases). `npm run zip` builds them yourself, into `dist/noharam-<browser>-<version>.zip`.
 - **Firefox:** if the popup says *NoHaram needs access to websites*, click **Allow on all sites**.
 - **Skipping the test browser:** `npm install` also downloads a test copy of Chrome, about 150 MB. If you only want to build, use `PUPPETEER_SKIP_DOWNLOAD=1 npm install`.
 
@@ -135,11 +136,11 @@ All models are existing, published models, converted to run in the browser. NoHa
 
 | Role | Model | Size | License |
 |---|---|---|---|
-| Stage 1: anyone in the picture? | [TinyCLIP ViT-8M/16](https://huggingface.co/wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M), Microsoft, 2023 | 9.4 MB | MIT |
-| Stage 2: woman, man or neither | [TinyCLIP ViT-39M/16](https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M), Microsoft, 2023 | 40.6 MB | MIT |
-| Face detection | [YuNet 2023mar](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet), OpenCV Zoo | 0.23 MB | MIT |
+| Stage 1: anyone in the picture? | [TinyCLIP ViT-8M/16](https://huggingface.co/wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M), Microsoft | 9.4 MB | MIT |
+| Stage 2: woman, man or neither | [TinyCLIP ViT-39M/16](https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M), Microsoft | 40.6 MB | MIT |
+| Face detection | [YuNet](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet), OpenCV Zoo | 0.23 MB | MIT |
 | Face gender (second opinion) | [age-gender-recognition-retail-0013](https://github.com/openvinotoolkit/open_model_zoo/tree/master/models/intel/age-gender-recognition-retail-0013), Intel | 1.4 MB | Apache-2.0 |
-| Nudity / explicit images | [nsfw-image-detection-384](https://huggingface.co/Marqo/nsfw-image-detection-384), Marqo, 2024 (ViT-Tiny, full precision) | 22.5 MB | Apache-2.0 |
+| Nudity / explicit images | [nsfw-image-detection-384](https://huggingface.co/Marqo/nsfw-image-detection-384), Marqo (ViT-Tiny, full precision) | 22.5 MB | Apache-2.0 |
 
 The built model files are committed in `src/models/`, so building the extension doesn't need Python. To rebuild them from the original downloads, run `npm run models:prepare`. That needs Python with `torch`, `transformers`, `timm`, `onnx`, `onnxruntime` and `onnxsim`. Changes and license texts are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
@@ -214,7 +215,7 @@ npm run models:scores
 npm run models:calibrate -- --write
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Bugs, wrong blurs and ideas go to the [issue tracker](https://github.com/mohamedsadiqaguenaou/NoHaram/issues).
 
 ## License
 

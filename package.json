@@ -2,8 +2,27 @@
   "name": "noharam",
   "version": "1.0.0",
   "private": true,
-  "description": "Browser extension that blurs images containing women and/or men, on-device and in real time.",
+  "description": "Browser extension that blurs images of women and/or men and blocks NSFW images, on-device and in real time.",
   "license": "MIT",
+  "homepage": "https://github.com/mohamedsadiqaguenaou/NoHaram#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsadiqaguenaou/NoHaram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohamedsadiqaguenaou/NoHaram/issues"
+  },
+  "keywords": [
+    "browser-extension",
+    "chrome-extension",
+    "firefox-addon",
+    "nsfw",
+    "nsfw-filter",
+    "image-blur",
+    "privacy",
+    "on-device",
+    "onnx"
+  ],
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",

@@ -1,7 +1,7 @@
 {
-  "extName": {"message": "NoHaram"},
-  "extDescription": {"message": "يحجب الصور التي تحتوي على نساء و/أو رجال فوراً، وبالكامل على جهازك."},
-  "brandSubtitle": {"message": "غُضّ بصرك أثناء التصفح."},
+  "extName": {"message": "NoHaram - احجب الصور المحرّمة والفاضحة"},
+  "extDescription": {"message": "يحجب صور النساء و/أو الرجال والصور الفاضحة (NSFW) فوراً، وبالكامل على جهازك."},
+  "brandSubtitle": {"message": "احجب الصور المحرّمة والفاضحة"},
   "settings": {"message": "الإعدادات"},
   "close": {"message": "إغلاق"},
   "tabDetecting": {"message": "جارٍ الكشف عن التبويب…"},

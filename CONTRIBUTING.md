@@ -45,7 +45,7 @@ For changes to the content script or the engine, please also run the end-to-end 
 
 ## Accuracy reports
 
-If NoHaram blurs the wrong picture or misses one, open an issue with:
+If NoHaram blurs the wrong picture or misses one, open an [issue](https://github.com/mohamedsadiqaguenaou/NoHaram/issues) with:
 - the page address, if it's public
 - whether it was a woman, a man, mixed or no person
 - the sensitivity you use
