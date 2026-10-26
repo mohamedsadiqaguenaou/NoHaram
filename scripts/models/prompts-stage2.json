@@ -1,0 +1,28 @@
+{
+  "image": {
+    "mode": "ensemble",
+    "groups": {
+      "female": [
+        "a photo of a woman", "a photo of a girl", "a photo of women", "a photo of a lady",
+        "a close-up photo of a woman's face", "a photo of a woman wearing a hijab", "a photo of a female model", "a drawing of a woman"
+      ],
+      "male": [
+        "a photo of a man", "a photo of a boy", "a photo of men", "a photo of a guy",
+        "a close-up photo of a man's face", "a photo of a man with a beard", "a photo of a male model", "a drawing of a man"
+      ],
+      "none": [
+        "a photo of an object", "a photo of a landscape", "a photo of food", "a photo of an animal", "a photo of a building",
+        "a photo of a car", "a photo of a product", "a photo of nature",
+        "a screenshot", "a screenshot of a website", "text", "a document", "a logo", "an icon", "a diagram", "a chart",
+        "a graph", "a map", "a flag", "a pattern", "a texture", "a sign", "an illustration of an object"
+      ]
+    }
+  },
+  "face": {
+    "mode": "sum",
+    "groups": {
+      "female": ["a photo of a woman's face", "a close-up photo of a woman", "a photo of a girl's face"],
+      "male": ["a photo of a man's face", "a close-up photo of a man", "a photo of a boy's face"]
+    }
+  }
+}

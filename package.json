@@ -1,0 +1,29 @@
+{
+  "name": "noharam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser extension that blurs images containing women and/or men, on-device and in real time.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:chrome": "node scripts/build.mjs chrome",
+    "build:firefox": "node scripts/build.mjs firefox",
+    "watch": "node scripts/build.mjs chrome --watch",
+    "zip": "node scripts/build.mjs --zip",
+    "test:e2e": "node test/e2e.mjs",
+    "test:lifecycle": "node test/lifecycle.mjs",
+    "test:flash": "node test/flash.mjs",
+    "models:prepare": "python scripts/models/prepare_models.py",
+    "models:evalset": "python scripts/models/make_evalset.py",
+    "models:scores": "node test/collect-scores.mjs --images .model-cache/evalset --out .model-cache/scores.json",
+    "models:calibrate": "python scripts/models/calibrate.py --scores .model-cache/scores.json --labels .model-cache/evalset/labels.json"
+  },
+  "dependencies": {
+    "onnxruntime-web": "^1.30.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "puppeteer": "^25.16.0"
+  }
+}

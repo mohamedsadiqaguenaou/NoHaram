@@ -1,0 +1,71 @@
+{
+  "version": "2026.10.25-b",
+  "models": {
+    "stage1": {
+      "file": "tinyclip-8m-stage1.int8.onnx",
+      "size": 160
+    },
+    "stage2": {
+      "file": "tinyclip-39m-stage2.int8.onnx",
+      "size": 192,
+      "faceSize": 112,
+      "faceContext": 2.2
+    },
+    "faces": {
+      "file": "yunet-2023mar.onnx",
+      "maxInput": 320,
+      "minInput": 128,
+      "scoreThreshold": 0.6,
+      "nmsThreshold": 0.3,
+      "maxFaces": 2
+    },
+    "gender": {
+      "file": "openvino-agr0013-gender.int8.onnx",
+      "size": 62,
+      "context": 1.0
+    },
+    "nsfw": {
+      "file": "marqo-nsfw-384.onnx",
+      "size": 384,
+      "threshold": 0.5
+    }
+  },
+  "faceFusion": {
+    "clipWeight": 0.8
+  },
+  "faceSkip": {
+    "decisive": 0.6,
+    "other": 0.05
+  },
+  "fusion": {
+    "stage2Weight": 0.6,
+    "stage1Agreement": 0.5
+  },
+  "cascade": {
+    "reject": 0.124,
+    "maxAspect": 2.0,
+    "maxTiles": 3
+  },
+  "sensitivity": {
+    "relaxed": {
+      "female": 0.182,
+      "male": 0.193,
+      "person": 0.831
+    },
+    "balanced": {
+      "female": 0.12,
+      "male": 0.118,
+      "person": 0.674
+    },
+    "strict": {
+      "female": 0.052,
+      "male": 0.048,
+      "person": 0.263
+    }
+  },
+  "explain": {
+    "female": 0.09,
+    "male": 0.174
+  },
+  "calibration": "scripts/models/calibrate.py on the browser pipeline's own scores for 888 images (130 women-only, 130 men-only, 60 mixed, 130 photos and 438 graphics without people). Balanced = 92% of images with the selected gender blurred."
+}

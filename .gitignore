@@ -1,0 +1,39 @@
+# Dependencies (npm install)
+node_modules/
+
+# Build output (npm run build / npm run zip) and packaged extensions
+dist/
+*.zip
+*.crx
+*.xpi
+# Extension signing keys: Chrome writes one next to a packed .crx. Never publish it.
+*.pem
+
+# Model downloads, conversion intermediates and evaluation images (npm run models:*)
+.model-cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets and local environment
+.env
+.env.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and local tool settings
+.vscode/
+.idea/
+*.swp
+*~
+.claude/settings.local.json
