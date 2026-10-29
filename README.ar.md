@@ -24,6 +24,10 @@
 </p>
 
 <p align="center">
+  <a href="https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje"><img src="https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png" width="206" height="58" alt="متوفّر في سوق Chrome الإلكتروني"></a>
+</p>
+
+<p align="center">
   <img src="docs/screenshots/popup-ar.png" width="250" alt="نافذة NoHaram بالعربية">
   &nbsp;
   <img src="docs/screenshots/settings-ar.png" width="250" alt="إعدادات NoHaram بالعربية">
@@ -52,6 +56,14 @@
 - **يعمل على** Chrome وEdge وBrave وغيرها من متصفحات Chromium، وعلى Firefox في الحاسوب وأندرويد.
 
 ## التثبيت
+
+<p>
+  <a href="https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje"><img src="https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png" width="206" height="58" alt="متوفّر في سوق Chrome الإلكتروني"></a>
+</p>
+
+ثبّت الإضافة مباشرة من [سوق Chrome الإلكتروني (Chrome Web Store)](https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje) (تعمل على Chrome وEdge وBrave وغيرها من متصفحات Chromium).
+
+### البناء من المصدر
 
 تحتاج إلى [Node.js](https://nodejs.org) الإصدار 22 أو أحدث.
 

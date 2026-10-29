@@ -22,6 +22,10 @@
 </p>
 
 <p align="center">
+  <a href="https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje"><img src="https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png" width="206" height="58" alt="Available in the Chrome Web Store"></a>
+</p>
+
+<p align="center">
   <img src="docs/screenshots/popup-en.png" width="250" alt="NoHaram popup in English">
   &nbsp;
   <img src="docs/screenshots/popup-ar.png" width="250" alt="NoHaram popup in Arabic">
@@ -48,6 +52,14 @@
 - **Works in** Chrome, Edge, Brave and other Chromium browsers, and in Firefox on desktop and Android.
 
 ## Install
+
+<p>
+  <a href="https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje"><img src="https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png" width="206" height="58" alt="Available in the Chrome Web Store"></a>
+</p>
+
+Install directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje) (works in Chrome, Edge, Brave and other Chromium browsers).
+
+### Build from source
 
 You need [Node.js](https://nodejs.org) 22 or newer.
 
