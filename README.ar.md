@@ -57,11 +57,20 @@
 
 ## التثبيت
 
+### Chrome وEdge وBrave ومتصفحات Chromium
+
 <p>
   <a href="https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje"><img src="https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png" width="206" height="58" alt="متوفّر في سوق Chrome الإلكتروني"></a>
 </p>
 
 ثبّت الإضافة مباشرة من [سوق Chrome الإلكتروني (Chrome Web Store)](https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje) (تعمل على Chrome وEdge وBrave وغيرها من متصفحات Chromium).
+
+### Firefox
+
+1. افتح صفحة [الإصدارات (Releases)](https://github.com/mohamedsadiqaguenaou/NoHaram/releases) ونزّل الملف **`noharam-firefox-<version>.zip`** من قسم **Assets** في أحدث إصدار.
+2. افتح `about:debugging#/runtime/this-firefox`، وانقر **تحميل إضافة مؤقتة** (**Load Temporary Add-on…**)، واختر ملف `noharam-firefox-<version>.zip` الذي نزّلته (أو فكّ ضغطه واختر `manifest.json`).
+   - *تثبيت دائم (في Firefox Developer Edition أو Nightly):* اضبط `xpinstall.signatures.required` على `false` في `about:config`، ثم افتح `about:addons` ← أيقونة الترس ← **Install Add-on From File…** واختر ملف `noharam-firefox-<version>.zip`.
+3. افتح نافذة NoHaram من شريط الأدوات — إذا ظهرت رسالة *يحتاج NoHaram إلى الوصول إلى المواقع*، انقر **السماح على جميع المواقع** (**Allow on all sites**).
 
 ### البناء من المصدر
 

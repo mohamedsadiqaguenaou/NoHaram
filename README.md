@@ -53,11 +53,20 @@
 
 ## Install
 
+### Chrome, Edge, Brave & Chromium
+
 <p>
   <a href="https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje"><img src="https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png" width="206" height="58" alt="Available in the Chrome Web Store"></a>
 </p>
 
 Install directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/fonnoaecgfllafiododkambalkjafpje) (works in Chrome, Edge, Brave and other Chromium browsers).
+
+### Firefox
+
+1. Go to [Releases](https://github.com/mohamedsadiqaguenaou/NoHaram/releases) and download **`noharam-firefox-<version>.zip`** from the latest release's **Assets**.
+2. Open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…**, and select the downloaded `noharam-firefox-<version>.zip` (or extract it and select `manifest.json`).
+   - *Permanent install (Firefox Developer Edition / Nightly):* set `xpinstall.signatures.required` to `false` in `about:config`, then open `about:addons` → gear icon → **Install Add-on From File…** and select `noharam-firefox-<version>.zip`.
+3. Click the NoHaram toolbar icon — if the popup says *NoHaram needs access to websites*, click **Allow on all sites**.
 
 ### Build from source
 
