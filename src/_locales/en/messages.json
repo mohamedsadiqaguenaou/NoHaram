@@ -1,6 +1,6 @@
 {
   "extName": {"message": "NoHaram - Block Haram and NSFW images"},
-  "extDescription": {"message": "Blurs images of women and/or men and blocks NSFW images, in real time, entirely on your device."},
+  "extDescription": {"message": "Block images of women and/or men and NSFW images, in real time, entirely on your device."},
   "brandSubtitle": {"message": "Block Haram and NSFW images"},
   "settings": {"message": "Settings"},
   "close": {"message": "Close"},

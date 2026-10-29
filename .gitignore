@@ -9,6 +9,9 @@ dist/
 # Extension signing keys: Chrome writes one next to a packed .crx. Never publish it.
 *.pem
 
+# Chrome Web Store listing text and images (kept on this computer only)
+store/
+
 # Model downloads, conversion intermediates and evaluation images (npm run models:*)
 .model-cache/
 

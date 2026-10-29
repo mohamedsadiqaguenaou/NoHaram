@@ -1,6 +1,6 @@
 {
   "name": "noharam",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Browser extension that blurs images of women and/or men and blocks NSFW images, on-device and in real time.",
   "license": "MIT",
